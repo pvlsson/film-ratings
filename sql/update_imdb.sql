@@ -6,7 +6,7 @@ set global local_infile = 1;
 show global variables like 'local_infile';
 
 -- Load updated IMDB data
-load data local infile '/Users/pavelsson/Development/Projects/film-ratings/data/updated_imdb_ratings.csv'
+load data local infile '/data/updated_imdb_ratings.csv'
 into table pvl_files.import_imdb_ratings
 fields terminated by ','
 optionally enclosed by '"'

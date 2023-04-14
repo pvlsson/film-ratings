@@ -50,7 +50,7 @@ set global local_infile = 1;
 show global variables like 'local_infile';
 
 -- Load data into tables
-load data local infile '/Users/pavelsson/Development/Projects/film-ratings/data/kp_ratings.csv'
+load data local infile '/data/kp_ratings.csv'
 into table pvl_files.import_kp_ratings
 fields terminated by ','
 optionally enclosed by '"'
@@ -58,7 +58,7 @@ lines terminated by '\r\n'
 ignore 1 rows
 set rating_datetime = date_format(str_to_date(rating_datetime, '%d.%m.%Y, %H:%i'), '%Y-%m-%d %H:%i');
 
-load data local infile '/Users/pavelsson/Development/Projects/film-ratings/data/imdb_ratings.csv'
+load data local infile '/data/imdb_ratings.csv'
 into table pvl_files.import_imdb_ratings
 fields terminated by ','
 optionally enclosed by '"'
