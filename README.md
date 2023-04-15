@@ -28,7 +28,7 @@ I want to extract this data into a table with 4 columns: nameEng, nameRus, ratin
 
 The final Python script is a corrected version of the ChatGPT script (`kp_import.py`).
 
-I run the script inside a Python 3.9 virtual environment with pre-installed beautifulsoup4 and pandas packages.
+I run the script inside a Python 3.9.6 virtual environment with pre-installed beautifulsoup4 and pandas packages.
 
 The result is a CSV file, which I additionally clean using Excel.
 
